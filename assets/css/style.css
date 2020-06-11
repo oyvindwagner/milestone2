@@ -27,10 +27,3 @@ html,body {
 #mapCanvas #esriControlsBR, #mapCanvas #mapCanvas_zoom_slider { 
   display:none;
 }
-
-
-#mapCanvas-map {
-  height: 400px;
-  width: 80%;
-  margin-left:100px;
-}
