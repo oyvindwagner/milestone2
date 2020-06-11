@@ -19,22 +19,34 @@
     crossorigin=""></script>
 
   <!-- Main CSS-->
+  <link rel="stylesheet" href="https://js.arcgis.com/3.20/esri/css/esri.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-</head>
-<!-- Page loader-->
-<body onload="loaderFunction()" style="margin:0;">
+<style>
+      html,body {
+        width:100%;
+        height:100%;
+        margin: 0;
+        padding: 0px 0 0 0;
+      }
 
-<div id="loader"></div>
+      #mapCanvas {
+        padding:0;
+      }
 
-<div style="display:none;" id="pageLoader" class="animate-bottom">
+      #credit {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: #fff;
+        font-size: 14px;
+      }
 
-</div>
-<!-- Page loader-->
+      #credit a {
+        color: #08c;
+      }
 
-<!-- Base map-->
-<div id="map"></div>
-<!-- Base map-->
+    </style>
 
     <script>
       var dojoConfig = {
@@ -43,7 +55,7 @@
         }
       };
     </script>
-    <script src="./js/windy.js"></script>
+    <script src="./windy.js"></script>
     <script src="https://js.arcgis.com/3.20compact/"></script>
     <script>
       var map, rasterLayer;
@@ -130,10 +142,24 @@
         }
       });
     </script>
+</head>
+<!-- Page loader-->
+<body onload="loaderFunction()" style="margin:0;">
 
+<div id="loader"></div>
 
-<!-- JS -->
- <script src="assets/js/main.js"></script>
+<div style="display:none;" id="pageLoader" class="animate-bottom">
 
+</div>
+<!-- Page loader-->
+
+<!-- Base map-->
+<div id="map"></div>
+<!-- Base map-->
+
+   
+     <div id="mapCanvas" style="height:100%;">
+     </div>
+     <div id="credit">Inspired by <a href="https://github.com/cambecc/earth">Earth</a>, data from <a href="http://nomads.ncdc.noaa.gov/data.php?name=access#hires_weather_datasets">GFS</a>, open source on <a href="https://github.com/Esri/wind-js">Github</a></div>
 </body>
 </html>
