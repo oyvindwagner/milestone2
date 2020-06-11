@@ -15,13 +15,13 @@ html,body {
 
 #mapCanvas {
   position: absolute;
-  height: 400px;
-  width: 70%;
+  height: auto;
+  width: auto;
   top: -40px;
   -moz-transform: translateZ(50px);
   -webkit-transform: translateZ(50px);
   left: 168px;
-  border: 1px solid #000;
+  border: none;
   pointer-events:none;
 }
 #mapCanvas #esriControlsBR, #mapCanvas #mapCanvas_zoom_slider { 
