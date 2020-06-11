@@ -58,3 +58,25 @@
   text-align: center;
 }
 /* Loader */
+
+#mapCanvas {
+  position: absolute;
+  height: 400px;
+  width: 70%;
+  top: -40px;
+  -moz-transform: translateZ(50px);
+  -webkit-transform: translateZ(50px);
+  left: 168px;
+  border: 1px solid #000;
+  pointer-events:none;
+}
+#mapCanvas #esriControlsBR, #mapCanvas #mapCanvas_zoom_slider { 
+  display:none;
+}
+
+
+#mapCanvas-map {
+  height: 400px;
+  width: 80%;
+  margin-left:100px;
+}
