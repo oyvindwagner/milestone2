@@ -15,8 +15,8 @@ html,body {
 
 #mapCanvas {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vh;
   -moz-transform: translateZ(50px);
   -webkit-transform: translateZ(50px);
   border: none;
